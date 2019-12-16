@@ -1,3 +1,21 @@
-.component {
-    @apply bg-blue-300 text-white;
+@tailwind base;
+
+a {
+    text-decoration: none;
+    @apply text-teal-400;
 }
+
+.top-nav-item {
+    @apply .text-gray-800 .text-sm .mr-4 .font-semibold .pb-6 .border-b-2 .border-solid .border-transparent;
+}
+
+.top-nav-item:hover{
+    @apply .text-teal-400 .border-teal-400;
+}
+
+.hero{
+    background:url('/img/twitter/tailwind_bg.jpg')
+}
+@tailwind components;
+
+@tailwind utilities;

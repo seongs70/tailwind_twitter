@@ -132,11 +132,28 @@
 </head>
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link rel="stylesheet" href={{ asset('css/main.css') }}>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body class="bg-gray-100 font-sans">
 <div class="bg-white">
     <div class="container mx-auto flex items-center py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum expedita ipsum laudantium nesciunt nisi officiis omnis, repudiandae totam unde.
+        <nav class="w-2/5">
+            <a href="" class="top-nav-item"><i class="fa fa-home fa-lg">Home</i></a>
+            <a href="" class="top-nav-item"><i class="fa fa-bol fa-lg">Moment</i></a>
+            <a href="" class="top-nav-item"><i class="fa fa-bell fa-lg">Notification</i></a>
+            <a href="" class="top-nav-item"><i class="fa fa-envelope fa-lg">Messages</i></a>
+        </nav>
+        <div class="w-1/5 text-center"><a href=""><i class="fa fa-twitter fa-lg text-blue"></i></a></div>
+        <div class="w-2/5 flex justify-end">
+            <div class="mr-4 relative">
+                <input type="text" class="bg-gray-300 h-8 px-4 py-2 text-xs w-48 rounded-full" placeholder="Search twitter">
+                <span class="flex items-center absolute right-0 inset-y-0 mr-3"><i class="fa fa-search text-grey-100"></i></span>
+            </div>
+            <div class="mr-4"><a href=""><img src="/img/twitter/avatar.jpg" alt="avatar.jpg" class="h-8 w-8 rounded-full"></a></div>
+            <div><button class="bg-teal-400 hover:bg-teal-dark-200 text-white font-medium py-2 px-4 rounded-full">Tweet</button></div>
+        </div> {{-- end container--}}
     </div>
+
+    <div class="hero h-112 bg-cover"></div>
 </div>
 </body>
 </html>
